@@ -4,9 +4,9 @@ This is a fork of the MediaWiki Description2 extension maintained by the fanwiki
 
 ## Changes
 
-### Removing <style> tags
+### Removing `<style>` tags
 
-When using the TemplateStyles extension at the top of an article, the Description may end up being just CSS. This is not what we want, so we remove the <style> tags from the description.
+When using the TemplateStyles extension at the top of an article, the Description may end up being just CSS. This is not what we want, so we remove the `<style>` tags from the description.
 
 ```diff
 - $pattern = '%<table\b[^>]*+>(?:(?R)|[^<]*+(?:(?!</?table\b)<[^<]*+)*+)*+</table>%i';
